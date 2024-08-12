@@ -1,6 +1,6 @@
 #about-me {
 
-    & .perfil-info {
+    & .perfil {
 
         & .perfil-img {
             padding: 4px;
@@ -9,21 +9,54 @@
 
             & img {
                 border: 4px solid white;
-                width: 7.5rem;
+                width: 3.5rem;
                 border-radius: 50%;
             }
+        }
+
+        & .perfil-info {
+            gap: .5rem;
+        }
+
+        & .perfil-features li {
+            display: flex;
+            gap: .5rem;
+            align-items: center;
         }
 
     }
 
     @media (width >= 80em) {
     
-        & .perfil-info {
+        & .perfil {
+            grid-template-columns: 11rem 4fr 1fr;
 
             & .perfil-img {
     
                 & img {
                     width: 11rem;
+                }
+            }
+
+            & .perfil-info {
+
+                & .follow {
+                    gap: 4rem;
+
+                    & a {
+                        font: var(--text-sm);
+                        font-weight: 600;
+                        color: var(--text-color-primary);
+
+                        &:hover {
+                            text-decoration: none;
+                            color: inherit;
+                        }
+                    }
+                }
+
+                & .perfil-text {
+                    max-width: 24rem;
                 }
             }
         }
