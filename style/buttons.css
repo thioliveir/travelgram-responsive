@@ -1,0 +1,21 @@
+.btn {
+    background: rgb(0, 149, 246);
+    color: rgb(255, 255, 255);
+    border-radius: .5rem;
+    padding: .4rem 1rem;
+    font: var(--text-sm);
+
+    &:hover {
+        background: rgb(24, 119, 242);
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.btn-secondary {
+    background: rgb(54, 54, 54);
+
+    &:hover {
+        background: rgb(38, 38, 38);
+    }
+}

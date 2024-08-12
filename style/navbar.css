@@ -1,0 +1,14 @@
+#nav-menu {
+
+    & nav {
+
+        & > img {
+            margin-right: auto;
+        }
+        
+        & > div img {
+            border-radius: 50%;
+            width: 2.5rem;
+        }
+    } 
+}

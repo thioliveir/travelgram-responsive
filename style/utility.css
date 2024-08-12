@@ -1,0 +1,38 @@
+.container {
+    padding-inline: 2rem;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.grid {
+    display: grid;
+}
+.flex {
+    display: flex;
+}
+.items-center {
+    align-items: center;
+}
+
+.py-1 {
+    padding-block: 1rem;
+}
+.py-2 {
+    padding-block: 2rem;
+}
+.gap-1 {
+    gap: 1rem;
+}
+.gap-2 {
+    gap: 2rem;
+}
+@media (width >= 80em) {
+    .desktop-only {
+        display: initial;
+    }
+    .py-1 {
+        padding-bottom: 1.25rem;
+    }
+}
