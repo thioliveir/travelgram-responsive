@@ -17,10 +17,16 @@
 
     --ff-poppins: "Poppins", sans-serif;
 
-    --text-tittle: 600 2rem/1.25 var(--ff-poppins);
+    --text-tittle: 600 1.5rem/1.25 var(--ff-poppins);
     --text-md: 400 1rem/1.7 var(--ff-poppins);
     --text-sm: 400 .875rem/1.7 var(--ff-poppins);
 
+}
+
+@media (width >= 80) {
+    :root {
+        --text-tittle: 600 2rem/1.25 var(--ff-poppins);
+    }
 }
 
 body {
@@ -56,6 +62,3 @@ img {
 ul {
     list-style: none;
 }
-
-
-

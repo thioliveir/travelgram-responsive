@@ -1,27 +1,63 @@
 #about-me {
 
     & .perfil {
+        grid-template-columns: 7.5rem 1fr 1fr;
+        grid-template-rows: 7.5rem 11.375rem 6.5rem;
+        gap: 1rem;
 
         & .perfil-img {
+            grid-column: 1/2;
+            grid-row: 1/2;
             padding: 4px;
             background: var(--border-gradient);
             border-radius: 50%;
 
             & img {
                 border: 4px solid white;
-                width: 3.5rem;
+                
                 border-radius: 50%;
             }
         }
 
         & .perfil-info {
+            grid-column: 1/4;
+            grid-row: 2/3;
             gap: .5rem;
+
+            & header > svg {
+                width: 10px;
+            }
+
+            & .follow {
+                gap: 4rem;
+
+                & a {
+                    font: var(--text-sm);
+                    font-weight: 600;
+                    color: var(--text-color-primary);
+
+                    &:hover {
+                        text-decoration: none;
+                        color: inherit;
+                    }
+                }
+            }
+
+            & .perfil-text p {
+                letter-spacing: -1px;
+            }
         }
 
-        & .perfil-features li {
-            display: flex;
-            gap: .5rem;
-            align-items: center;
+        & .perfil-features {
+            grid-column: 1/4;
+            grid-row: 3/4;
+            
+            & li {
+
+                display: flex;
+                gap: .5rem;
+                align-items: center;
+            }
         }
 
     }
@@ -30,34 +66,38 @@
     
         & .perfil {
             grid-template-columns: 11rem 4fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 2rem;
 
             & .perfil-img {
-    
+                grid-column: 1/2;
+                grid-row: 1/2;
+                
                 & img {
                     width: 11rem;
                 }
             }
 
             & .perfil-info {
+                grid-column: 2/3;
+                grid-row: 1/2;
 
-                & .follow {
-                    gap: 4rem;
-
-                    & a {
-                        font: var(--text-sm);
-                        font-weight: 600;
-                        color: var(--text-color-primary);
-
-                        &:hover {
-                            text-decoration: none;
-                            color: inherit;
-                        }
-                    }
+                & header > svg {
+                    width: 20px;
                 }
 
                 & .perfil-text {
                     max-width: 24rem;
+
+                    & P {
+                        letter-spacing: 0;
+                    }
                 }
+            }
+
+            & .perfil-features {
+                grid-column: 3/4;
+                grid-row: 1/2;
             }
         }
     }

@@ -1,9 +1,12 @@
 .btn {
+    --btn-font: 400 .875rem/1.7 var(--ff-poppins);
+    --btn-font-sm: 400 .675rem/1.7 var(--ff-poppins);
+
     background: rgb(0, 149, 246);
     color: rgb(255, 255, 255);
     border-radius: .5rem;
-    padding: .4rem 1rem;
-    font: var(--text-sm);
+    padding: .3rem .8rem;
+    font: var(--btn-font-sm);
 
     &:hover {
         background: rgb(24, 119, 242);
@@ -17,5 +20,12 @@
 
     &:hover {
         background: rgb(38, 38, 38);
+    }
+}
+
+@media (width >= 80em) {
+    .btn {
+        font: var(--btn-font);
+        padding: .4rem 1rem;
     }
 }
