@@ -1,5 +1,5 @@
 #nav-menu {
-
+    background-color: var(--surface-color);
     & nav {
 
         & > img {

@@ -22,17 +22,20 @@
 .py-2 {
     padding-block: 2rem;
 }
+.px-1 {
+    padding-inline: 1rem;
+}
 .gap-1 {
     gap: 1rem;
 }
 .gap-2 {
     gap: 2rem;
 }
-@media (width >= 80em) {
+@media (width >= 48em) {
     .desktop-only {
         display: initial;
     }
     .py-1 {
-        padding-bottom: 1.25rem;
+        padding-block: 1.25rem;
     }
 }

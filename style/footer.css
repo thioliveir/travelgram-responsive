@@ -1,0 +1,35 @@
+footer {
+    & > div.flex {
+        flex-direction: column;
+        padding: 1rem;
+        justify-items: center;
+    }
+
+    & .links {
+        gap: 1.25rem;
+
+        & a {
+            font: var(--text-sm);
+        }
+    }
+
+    
+}
+
+@media (width >= 80em) {
+    footer {
+        
+        & > div.flex {
+            flex-direction: row;
+            padding: 1.5rem 2rem;
+        }
+
+        & p {
+            margin-right: auto;
+        }
+
+        & .links {
+            gap: 1rem;
+        }
+    }
+}

@@ -1,4 +1,5 @@
 #about-me {
+    background-color: var(--surface-color);
 
     & .perfil {
         grid-template-columns: 7.5rem 1fr 1fr;
@@ -14,7 +15,6 @@
 
             & img {
                 border: 4px solid white;
-                
                 border-radius: 50%;
             }
         }
@@ -43,7 +43,7 @@
                 }
             }
 
-            & .perfil-text p {
+            & .perfil-text {
                 letter-spacing: -1px;
             }
         }
@@ -53,7 +53,6 @@
             grid-row: 3/4;
             
             & li {
-
                 display: flex;
                 gap: .5rem;
                 align-items: center;
@@ -62,10 +61,17 @@
 
     }
 
+    @media (width >= 48em) {
+        & .perfil .perfil-info .perfil-text {
+            max-width: 24rem;
+            letter-spacing: 0;
+        }
+    }
+
     @media (width >= 80em) {
     
         & .perfil {
-            grid-template-columns: 11rem 4fr 1fr;
+            grid-template-columns: 11rem 3fr 1fr;
             grid-template-rows: 1fr;
             gap: 2rem;
 
@@ -86,13 +92,7 @@
                     width: 20px;
                 }
 
-                & .perfil-text {
-                    max-width: 24rem;
 
-                    & P {
-                        letter-spacing: 0;
-                    }
-                }
             }
 
             & .perfil-features {
